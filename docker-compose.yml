@@ -1,0 +1,11 @@
+version: '2'
+services:
+  peerflix:
+    build: 
+      context: .
+    image: peerflix:latest
+    ports:
+      - "9000:9000"
+    stdin_open: true
+    tty: true
+    hostname: peerflix
